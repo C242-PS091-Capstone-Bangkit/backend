@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/5120be70-7b74-4c92-8f42-3433c688f4b8)# skinalyze-test
 ## Endpoint
 http://34.101.62.223:5000
 #### User-API
