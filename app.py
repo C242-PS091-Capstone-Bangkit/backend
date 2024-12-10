@@ -42,7 +42,7 @@ RECOMMENDATIONS = {
         {"nama_produk": "Dermalogica AGE Bright Clearing Serum 30ml", "link_produk": "https://www.lookfantastic.com/dermalogica-age-bright-clearing-serum-30ml/12134833.html"}
     ],
 
-    "normalds": [
+    "normaldark_spot": [
         {"saran_kandungan": "Niacinamide, vitamin C, retinol (mulailah dengan konsentrasi rendah)"},
         {"nama_produk": "Clinique Even Better Clinical Radical Dark Spot Corrector + Interrupter 50ml", "link_produk": "https://www.lookfantastic.com/clinique-even-better-clinical-radical-dark-spot-corrector-interrupter-50ml/12483689.html"},
         {"nama_produk": "L'Oreal Paris Dermo Expertise Revitalift Laser Renew Anti-ageing Triple Action Super Serum (30ml)", "link_produk": "https://www.lookfantastic.com/l-oreal-paris-dermo-expertise-revitalift-laser-renew-anti-aging-triple-action-super-serum-30ml/10726513.html"},
@@ -54,7 +54,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "normalppb": [
+    "normallarge_pores": [
         {"saran_kandungan": "Niacinamide, retinol, hyaluronic acid"},
         {"nama_produk": "PIXI Collagen and Retinol Serum 30ml", "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html"},
         {"nama_produk": "bareMinerals SkinLongevity Vital Power Infusion Serum 50ml", "link_produk": "https://www.lookfantastic.com/bareminerals-skinlongevity-vital-power-infusion-serum-50ml/11262516.html"},
@@ -66,7 +66,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "normalkeriput": [
+    "normalwrinkles": [
         {"saran_kandungan": "Retinol, hyaluronic acid, peptides"},
         {"nama_produk": "PIXI Collagen and Retinol Serum 30ml", "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html"},
         {"nama_produk": "Elizabeth Arden Retinol Ceramide Capsules Line Erasing Night Serum - 30 Pieces (Sleeved Version)", "link_produk": "https://www.lookfantastic.com/elizabeth-arden-retinol-ceramide-capsules-line-erasing-night-serum-30-pieces-sleeved-version/11845677.html"},
@@ -88,7 +88,7 @@ RECOMMENDATIONS = {
     ],
     
     
-    "berminyakacne": [
+    "oilyacne": [
         {"saran_kandungan": "Salicylic acid, tea tree oil, niacinamide"},
         {"nama_produk": "Aveda Hand Relief Night Renewal Serum 30ml", "link_produk": "https://www.lookfantastic.com/aveda-hand-relief-night-renewal-serum-30ml/11032875.html"},
         {"nama_produk": "COSRX Salicylic Acid Daily Gentle Cleanser 170g", "link_produk": "https://www.lookfantastic.com/cosrx-salicylic-acid-daily-gentle-cleanser-170g/11540297.html"},
@@ -100,7 +100,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "berminyakds": [
+    "oilydark_spot": [
         {"saran_kandungan": "Niacinamide, vitamin C, retinol (mulailah dengan konsentrasi rendah)"},
         {"nama_produk": "Elizabeth Arden Skin Illuminating Advanced Brightening Day Serum (30ml)", "link_produk": "https://www.lookfantastic.com/elizabeth-arden-skin-illuminating-advanced-brightening-day-serum-30ml/11247488.html"},
         {"nama_produk": "CeraVe Smoothing Cream 177ml", "link_produk": "https://www.lookfantastic.com/cerave-smoothing-cream-177ml/12207665.html"},
@@ -112,7 +112,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "berminyakppb": [
+    "oilylarge_pores": [
         {"saran_kandungan": "Niacinamide, retinol, clay mask"},
         {"nama_produk": "La Roche-Posay Effaclar Clay Mask 100ml", "link_produk": "https://www.lookfantastic.com/la-roche-posay-effaclar-clay-mask-100ml/11434755.html"},
         {"nama_produk": "Elizabeth Arden Skin Illuminating Advanced Brightening Night Capsules (50 Capsules)", "link_produk": "https://www.lookfantastic.com/elizabeth-arden-skin-illuminating-advanced-brightening-night-capsules-50-capsules/11247489.html"},
@@ -124,7 +124,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "berminyakkeriput": [
+    "oilywrinkles": [
         {"saran_kandungan": "Retinol, hyaluronic acid, peptides"},
         {"nama_produk": "PIXI Collagen and Retinol Serum 30ml", "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html"},
         {"nama_produk": "Elizabeth Arden Retinol Ceramide Capsules Line Erasing Night Serum - 30 Pieces (Sleeved Version)", "link_produk": "https://www.lookfantastic.com/elizabeth-arden-retinol-ceramide-capsules-line-erasing-night-serum-30-pieces-sleeved-version/11845677.html"},
@@ -135,7 +135,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "berminyaknormal": [
+    "oilynormal": [
         {"saran_kandungan": "Niacinamide, hyaluronic acid, gel moisturizer"},
         {"nama_produk": "The INKEY List Peptide Moisturizer 50ml", "link_produk": "https://www.lookfantastic.com/the-inkey-list-peptide-moisturizer-50ml/12435692.html"},
         {"nama_produk": "CeraVe Facial Moisturising Lotion SPF 25 52ml", "link_produk": "https://www.lookfantastic.com/cerave-facial-moisturising-lotion-spf-25-52ml/11798689.html"},
@@ -146,7 +146,7 @@ RECOMMENDATIONS = {
     ],
     
     
-    "keringacne": [
+    "dryacne": [
         {"saran_kandungan": "Salicylic acid (konsentrasi rendah), tea tree oil, hyaluronic acid"},
         {"nama_produk": "CeraVe Smoothing Cream 177ml", "link_produk": "https://www.lookfantastic.com/cerave-smoothing-cream-177ml/12207665.html"},
         {"nama_produk": "Origins GinZing Ultra Hydrating Energy-Boosting Cream Moisturiser 50ml", "link_produk": "https://www.lookfantastic.com/origins-ginzing-ulta-hydrating-energy-boosting-cream-moisturiser-50ml/12193057.html"},
@@ -158,7 +158,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "keringds": [
+    "drydark_spot": [
         {"saran_kandungan": "Niacinamide, vitamin C, hyaluronic acid"},
         {"nama_produk": "La Roche-Posay Toleriane Sensitive Fluid Moisturiser 40ml", "link_produk": "https://www.lookfantastic.com/la-roche-posay-toleriane-sensitive-fluid-moisturiser-40ml/11855110.html"},
         {"nama_produk": "Fade Out ADVANCED + Age Protection Even Skin Tone Day Cream SPF 25 50ml", "link_produk": "https://www.lookfantastic.com/fade-out-advanced-age-protection-even-skin-tone-day-cream-spf-25-50ml/11490811.html"},
@@ -169,7 +169,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "keringppb": [
+    "drylarge_pores": [
         {"saran_kandungan": "Hyaluronic acid, niacinamide, retinol (mulailah dengan konsentrasi rendah)"},
         {"nama_produk": "La Roche-Posay Toleriane Sensitive Fluid Moisturiser 40ml", "link_produk": "https://www.lookfantastic.com/la-roche-posay-toleriane-sensitive-fluid-moisturiser-40ml/11855110.html"},
         {"nama_produk": "Fade Out ADVANCED + Age Protection Even Skin Tone Day Cream SPF 25 50ml", "link_produk": "https://www.lookfantastic.com/fade-out-advanced-age-protection-even-skin-tone-day-cream-spf-25-50ml/11490811.html"},
@@ -180,7 +180,7 @@ RECOMMENDATIONS = {
     ],
     
 
-    "keringkeriput": [
+    "drywrinkles": [
         {"saran_kandungan": "Retinol, hyaluronic acid, peptides, ceramides"},
         {"nama_produk": "PIXI Collagen and Retinol Serum 30ml", "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html"},
         {"nama_produk": "NIP+FAB Retinol Fix Serum Extreme 50ml", "link_produk": "https://www.lookfantastic.com/nip-fab-retinol-fix-serum-extreme-50ml/12192674.html"},
@@ -192,7 +192,7 @@ RECOMMENDATIONS = {
     ],
 
 
-    "keringnormal": [
+    "drynormal": [
         {"saran_kandungan": "Hyaluronic acid, ceramides, oil-based moisturizer"},
         {"nama_produk": "Dr.Jart+ Ceramidin Cream 50ml", "link_produk": "https://www.lookfantastic.com/dr.jart-ceramidin-cream-50ml/12099664.html"},
         {"nama_produk": "First Aid Beauty Ultra Repair Cream (56.7g)", "link_produk": "https://www.lookfantastic.com/first-aid-beauty-ultra-repair-cream-56.7g/11054496.html"},
@@ -227,7 +227,7 @@ def predict():
         image = Image.open(io.BytesIO(image_file.read())).resize((224, 224))  # Resize sesuai kebutuhan model
 
         # Preprocessing gambar
-        image_array = np.array(image) / 255.0 
+        image_array = np.array(image) 
         image_array = np.expand_dims(image_array, axis=0) 
 
         # Prediksi dengan kedua model
@@ -300,27 +300,33 @@ def save_to_database(id_user, skin_type, skin_condition, saran_kandungan, produc
 
 # Fungsi untuk mendekode hasil prediksi tipe kulit
 def decode_skin_type(prediction):
-    skin_type_recommendations = [
-        {"name": "normal", "link": ""},
-        {"name": "berminyak", "link": ""},
-        {"name": "kering", "link": ""}
-    ]
-    if len(prediction[0]) != len(skin_type_recommendations):
-        return {"name": "Unknown Skin", "link": ""}
-    return skin_type_recommendations[np.argmax(prediction)]
+    skin_type_recommendations = {
+        'dry': 0,
+        'normal': 1,
+        'oily': 2
+    }   
+
+    # Periksa hasil prediksi dan kembalikan label numeriknya
+    pred_index = np.argmax(prediction)
+    skin_type_label = list(skin_type_recommendations.values())[pred_index]
+    skin_type_name = list(skin_type_recommendations.keys())[pred_index]
+    return {"name": skin_type_name, "label": skin_type_label}
 
 # Fungsi untuk mendekode hasil prediksi kondisi kulit
 def decode_skin_condition(prediction):
-    skin_condition_recommendations = [
-        {"name": "acne", "link": ""},
-        {"name": "ds", "link": ""},
-        {"name": "ppb", "link": ""},
-        {"name": "keriput", "link": ""},
-        {"name": "normal", "link": ""},
-    ]
-    if len(prediction[0]) != len(skin_condition_recommendations):
-        return {"name": "Unknown Condition", "link": ""}
-    return skin_condition_recommendations[np.argmax(prediction)]
+    skin_condition_recommendations = {
+        'acne': 0,
+        'dark_spot': 1,
+        'large_pores': 2,
+        'normal': 3,
+        'wrinkles': 4
+    }
+     # Periksa hasil prediksi dan kembalikan label numeriknya
+    pred_index = np.argmax(prediction)
+    skin_condition_label = list(skin_condition_recommendations.values())[pred_index]
+    skin_condition_name = list(skin_condition_recommendations.keys())[pred_index]
+    
+    return {"name": skin_condition_name, "label": skin_condition_label}
 
 # Menjalankan server Flask
 if __name__ == '__main__':
