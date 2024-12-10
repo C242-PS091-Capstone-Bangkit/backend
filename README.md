@@ -1,9 +1,9 @@
-# skinalyze-test
+![image](https://github.com/user-attachments/assets/5120be70-7b74-4c92-8f42-3433c688f4b8)# skinalyze-test
 ## Endpoint
-http://35.219.82.248:5000
+http://34.101.62.223:5000
 #### User-API
 - GET-User
-	- URL: http://35.219.82.248:5000/users
+	- URL: http://34.101.62.223:5000/users
 	- Method: GET
 ```
 //response
@@ -30,7 +30,7 @@ http://35.219.82.248:5000
 ```
 
 - GET-userBy-id
-	- URL: http://35.219.82.248:5000/users/1
+	- URL: http://34.101.62.223:5000/users/1
 	- Method: GET
 ```
 //response
@@ -43,7 +43,7 @@ http://35.219.82.248:5000
 ```
 
 - POST-new-user
-	- URL: http://35.219.82.248:5000/users
+	- URL: http://34.101.62.223:5000/users
 	- Method: POST
 ```
 //request body
@@ -64,7 +64,7 @@ http://35.219.82.248:5000
 ```
 
 - PUT-edit-user
-	- URL: http://35.219.82.248:5000/users/1
+	- URL: http://34.101.62.223:5000/users/1
 	- Method: PUT
 ```
 //response body
@@ -82,7 +82,7 @@ http://35.219.82.248:5000
 ```
 
 - DEL-user
-	- URL: http://35.219.82.248:5000/users/5
+	- URL: http://34.101.62.223:5000/users/5
 	- Method: DELETE
 ```
 {
@@ -91,7 +91,7 @@ http://35.219.82.248:5000
 ```
 
 - Login-user
-	- URL: http://35.219.82.248:5000/login
+	- URL: http://34.101.62.223:5000/login
 	- Method: POST
 ```
 //request body
@@ -115,14 +115,14 @@ http://35.219.82.248:5000
 
 #### Reminder-API
 - GET-reminder
-	- URL: http://35.219.82.248:5000/reminder
+	- URL: http://34.101.62.223:5000/reminder
 	- Method: GET
 ```
 //response terlalu panjang tidak di include
 ```
 
 - GET-reminderBy-id
-	- URL: http://35.219.82.248:5000/reminder/1
+	- URL: http://34.101.62.223:5000/reminder/1
 	- Method: GET
 ```
 //response
@@ -136,7 +136,7 @@ http://35.219.82.248:5000
 ```
 
 - POST-new-reminder
-	- URL: http://35.219.82.248:5000/reminder
+	- URL: http://34.101.62.223:5000/reminder
 	- Method: POST
 ```
 //request body
@@ -154,7 +154,7 @@ http://35.219.82.248:5000
 ```
 
 - PUT-edit-reminder
-	- URL: http://35.219.82.248:5000/reminder/2
+	- URL: http://34.101.62.223:5000/reminder/2
 	- Method: PUT
 ```
 //request body
@@ -172,7 +172,7 @@ http://35.219.82.248:5000
 ```
 
 - DEL-reminder
-	- URL: http://35.219.82.248:5000/reminder/2
+	- URL: http://34.101.62.223:5000/reminder/2
 	- Method: DELETE
 ```
 {
@@ -181,7 +181,7 @@ http://35.219.82.248:5000
 ```
 #### History-API
 - GET-historyBy-id
-	- URL: http://35.219.82.248:5000/history/14
+	- URL: http://34.101.62.223:5000/history/14
 	- Method: GET
 ```
 //response
@@ -197,11 +197,52 @@ http://35.219.82.248:5000
 ```
 
 - DEL-history
-	- URL: http://35.219.82.248:5000/history/16
+	- URL: http://34.101.62.223:5000/history/16
 	- Method: DELETE
 ```
 //response
 {
     "message": "history delete successfully"
+}
+```
+
+- predict gambar
+  	- URL: http://34.101.62.223:6000/predict
+  	- Method: POST
+```
+//response
+{
+    "recommendation": [
+        {
+            "saran_kandungan": "Hyaluronic acid, niacinamide, retinol (mulailah dengan konsentrasi rendah)"
+        },
+        {
+            "link_produk": "https://www.lookfantastic.com/la-roche-posay-toleriane-sensitive-fluid-moisturiser-40ml/11855110.html",
+            "nama_produk": "La Roche-Posay Toleriane Sensitive Fluid Moisturiser 40ml"
+        },
+        {
+            "link_produk": "https://www.lookfantastic.com/fade-out-advanced-age-protection-even-skin-tone-day-cream-spf-25-50ml/11490811.html",
+            "nama_produk": "Fade Out ADVANCED + Age Protection Even Skin Tone Day Cream SPF 25 50ml"
+        },
+        {
+            "link_produk": "https://www.lookfantastic.com/bioderma-hydrabio-gel-cream-40ml/11688484.html",
+            "nama_produk": "Bioderma Hydrabio Gel Cream 40ml"
+        },
+        {
+            "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html",
+            "nama_produk": "PIXI Collagen and Retinol Serum 30ml"
+        },
+        {
+            "link_produk": "https://www.lookfantastic.com/nip-fab-retinol-fix-serum-extreme-50ml/12192674.html",
+            "nama_produk": "NIP+FAB Retinol Fix Serum Extreme 50ml"
+        },
+        {
+            "link_produk": "https://www.lookfantastic.com/murad-retinol-youth-renewal-serum-travel-size/11925166.html",
+            "nama_produk": "Murad Retinol Youth Renewal Serum Travel Size"
+        }
+    ],
+    "skin_condition": "large_pores",
+    "skin_type": "dry",
+    "status": "success"
 }
 ```
