@@ -1,7 +1,7 @@
 const Hapi = require('@hapi/hapi');
 const userRoutes = require('./routes/userRoutes');
-const routes = require('./routes/userRoutes');
 const reminderRoutes = require('./routes/reminderRoutes');
+const historyRoutes = require('./routes/historyRoutes');
 
 const init = async () => {
   const server = Hapi.Server({
@@ -14,6 +14,7 @@ const init = async () => {
 
   server.route(userRoutes);
   server.route(reminderRoutes);
+  server.route(historyRoutes);
 
   await server.start();
   console.log(`Server is running on ${server.info.uri}`);

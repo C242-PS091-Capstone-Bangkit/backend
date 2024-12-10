@@ -38,7 +38,6 @@ exports.createUser = async (request, h) => {
     const userWithHashedPassword = { ...request.payload, password: hashedPassword };
 
     // Simpan pengguna ke database
-
     const result = await userModel.createUser(userWithHashedPassword);
     return h.response({ id: result[0].insertId, ...userWithHashedPassword }).code(201);
   } catch (error) {
@@ -60,7 +59,7 @@ exports.deleteUser = async (request, h) => {
 };
 
 //login user
-const secretKey = 'dfvbjiuyu54598901!@#%R&V^*)';
+const secretKey = process.env.SECRET_KEY;
 
 exports.login = async (request, h) => {
   try {
@@ -116,10 +115,10 @@ exports.verifyToken = async (request, h) => {
 exports.updateUser = async (request, h) => {
   try {
     const { id } = request.params;
-    const { nama, email, password } = request.payload;
+    const { email, username, password } = request.payload;
 
-    if (!nama || !email || !password) {
-      return h.response({ error: 'All fields are required: nama, email, password' }).code(400);
+    if (!email || !username || !password) {
+      return h.response({ error: 'All fields are required: email, ,username, password' }).code(400);
     }
 
     let hashedPassword = undefined;
@@ -128,8 +127,8 @@ exports.updateUser = async (request, h) => {
     }
 
     const updateuser = {
-      nama: nama || undefined,
       email: email || undefined,
+      username: username || undefined,
       password: hashedPassword || undefined,
     };
 

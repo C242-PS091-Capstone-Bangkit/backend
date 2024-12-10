@@ -1,0 +1,11 @@
+# abaikan folder node_modules
+node_modules/
+
+#abaikan file .env
+.env
+
+#abaikan file package-lock-json
+package-lock.json
+
+#abaikan folder venv
+venv/

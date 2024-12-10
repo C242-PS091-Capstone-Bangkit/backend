@@ -1,15 +1,15 @@
 const reminderModel = require('../models/reminderModel');
 
-//creating reminder
+//buat reminder
 exports.createReminder = async (Request, h) => {
   try {
-    const { user_id, title, description, reminder_time } = Request.payload;
+    const { id_user, judul_reminder, deskripsi, jam_reminder } = Request.payload;
 
     const result = await reminderModel.createReminder({
-      user_id,
-      title,
-      description,
-      reminder_time,
+      id_user,
+      judul_reminder,
+      deskripsi,
+      jam_reminder,
     });
 
     return h.response({ id: result.insertId, message: 'reminder create successfully' }).code(201);
@@ -19,7 +19,7 @@ exports.createReminder = async (Request, h) => {
   }
 };
 
-//get all reminder
+//melihat semua reminder
 exports.getAllReminder = async (request, h) => {
   try {
     const reminder = await reminderModel.getAllReminders();
@@ -30,7 +30,7 @@ exports.getAllReminder = async (request, h) => {
   }
 };
 
-//get reminder by id reminder
+//melihat reminder berdasarkan id
 exports.getReminderById = async (request, h) => {
   try {
     const { id } = request.params;
@@ -51,16 +51,16 @@ exports.getReminderById = async (request, h) => {
 exports.updateReminder = async (request, h) => {
   try {
     const { id } = request.params;
-    const { title, description, reminder_time } = request.payload;
+    const { judul_reminder, deskripsi, jam_reminder } = request.payload;
 
-    if (!title || !description || !reminderModel) {
+    if (!jam_reminder || !deskripsi || !jam_reminder) {
       return h.response({ error: 'All fields are required: title, description, reminder_time' }).code(400);
     }
 
     const updatereminder = {
-      title: title || undefined,
-      description: description || undefined,
-      reminder_time: reminder_time || undefined,
+      judul_reminder: judul_reminder || undefined,
+      deskripsi: deskripsi || undefined,
+      jam_reminder: jam_reminder || undefined,
     };
 
     const result = await reminderModel.updateReminder(updatereminder, id);
