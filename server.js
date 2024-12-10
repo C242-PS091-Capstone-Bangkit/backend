@@ -6,7 +6,7 @@ const historyRoutes = require('./routes/historyRoutes');
 const init = async () => {
   const server = Hapi.Server({
     port: 5000,
-    host: 'localhost',
+    host: '0.0.0.0',
     routes: {
       cors: true,
     },
