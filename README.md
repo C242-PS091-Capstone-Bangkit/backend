@@ -214,35 +214,46 @@ http://34.101.62.223:6000
 {
     "recommendation": [
         {
-            "saran_kandungan": "Hyaluronic acid, niacinamide, retinol (mulailah dengan konsentrasi rendah)"
+            "saran_kandungan": "Niacinamide, retinol, clay mask"
         },
         {
-            "link_produk": "https://www.lookfantastic.com/la-roche-posay-toleriane-sensitive-fluid-moisturiser-40ml/11855110.html",
-            "nama_produk": "La Roche-Posay Toleriane Sensitive Fluid Moisturiser 40ml"
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11434755-2124929883353345.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
+            "link_produk": "https://www.lookfantastic.com/la-roche-posay-effaclar-clay-mask-100ml/11434755.html",
+            "nama_produk": "La Roche-Posay Effaclar Clay Mask 100ml"
         },
         {
-            "link_produk": "https://www.lookfantastic.com/fade-out-advanced-age-protection-even-skin-tone-day-cream-spf-25-50ml/11490811.html",
-            "nama_produk": "Fade Out ADVANCED + Age Protection Even Skin Tone Day Cream SPF 25 50ml"
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11247489-8064918723776630.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
+            "link_produk": "https://www.lookfantastic.com/elizabeth-arden-skin-illuminating-advanced-brightening-night-capsules-50-capsules/11247489.html",
+            "nama_produk": "Elizabeth Arden Skin Illuminating Advanced Brightening Night Capsules (50 Capsules)"
         },
         {
-            "link_produk": "https://www.lookfantastic.com/bioderma-hydrabio-gel-cream-40ml/11688484.html",
-            "nama_produk": "Bioderma Hydrabio Gel Cream 40ml"
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11097958-1504896380665305.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
+            "link_produk": "https://www.lookfantastic.com/dermalogica-age-bright-clearing-serum-30ml/12134833.html",
+            "nama_produk": "Dermalogica AGE Bright Clearing Serum 30ml"
         },
         {
-            "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html",
-            "nama_produk": "PIXI Collagen and Retinol Serum 30ml"
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11540506-1374897169744244.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
+            "link_produk": "https://www.lookfantastic.com/dr-dennis-gross-skincare-c-collagen-brighten-and-firm-vitamin-c-serum-30ml/11540506.html",
+            "nama_produk": "Dr Dennis Gross Skincare C+Collagen Brighten and Firm Vitamin C Serum 30ml"
         },
         {
-            "link_produk": "https://www.lookfantastic.com/nip-fab-retinol-fix-serum-extreme-50ml/12192674.html",
-            "nama_produk": "NIP+FAB Retinol Fix Serum Extreme 50ml"
-        },
-        {
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11925166-7314945662583233.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
             "link_produk": "https://www.lookfantastic.com/murad-retinol-youth-renewal-serum-travel-size/11925166.html",
             "nama_produk": "Murad Retinol Youth Renewal Serum Travel Size"
+        },
+        {
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11097958-1504896380665305.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
+            "link_produk": "https://www.lookfantastic.com/zelens-youth-concentrate-supreme-age-defying-serum-30ml/11097958.html",
+            "nama_produk": "Zelens Youth Concentrate Supreme Age-Defying Serum (30ml)"
+        },
+        {
+            "gambar_produk": "https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/12040130-1374969285198860.jpg&format=webp&auto=avif&width=985&height=985&fit=cover",
+            "link_produk": "https://www.lookfantastic.com/pixi-collagen-and-retinol-serum-30ml/12040130.html",
+            "nama_produk": "PIXI Collagen and Retinol Serum 30ml"
         }
     ],
     "skin_condition": "large_pores",
-    "skin_type": "dry",
+    "skin_type": "oily",
     "status": "success"
 }
 ```
