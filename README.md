@@ -1,5 +1,6 @@
 ## Endpoint
 http://34.101.62.223:5000
+http://34.101.62.223:6000
 #### User-API
 - GET-User
 	- URL: http://34.101.62.223:5000/users
