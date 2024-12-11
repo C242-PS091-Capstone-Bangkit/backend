@@ -5,17 +5,20 @@ from PIL import Image
 import io
 import mysql.connector
 from dotenv import load_dotenv
+import os
 
 # Inisialisasi Flask
 app = Flask(__name__)
 
+load_dotenv()
+
 #koneksi database
 def get_connection_db():
     return mysql.connector.connect(
-        host='34.128.94.194',
-        database='db_skinalyze',
-        user='root',
-        password='skinalyze87'
+        host=os.getenv('DB_HOST'),
+        database=os.getenv('DB_NAME'),
+        user=os.getenv('DB_USER'),
+        password=os.getenv('DB_PASS')
     )
 
 
