@@ -115,14 +115,14 @@ http://34.101.62.223:6000
 
 #### Reminder-API
 - GET-reminder
-	- URL: http://34.101.62.223:5000/reminder
+	- URL: http://34.101.62.223:5000/reminders
 	- Method: GET
 ```
 //response terlalu panjang tidak di include
 ```
 
 - GET-reminderBy-id
-	- URL: http://34.101.62.223:5000/reminder/1
+	- URL: http://34.101.62.223:5000/reminders/1
 	- Method: GET
 ```
 //response
@@ -136,7 +136,7 @@ http://34.101.62.223:6000
 ```
 
 - POST-new-reminder
-	- URL: http://34.101.62.223:5000/reminder
+	- URL: http://34.101.62.223:5000/reminders
 	- Method: POST
 ```
 //request body
@@ -154,7 +154,7 @@ http://34.101.62.223:6000
 ```
 
 - PUT-edit-reminder
-	- URL: http://34.101.62.223:5000/reminder/2
+	- URL: http://34.101.62.223:5000/reminders/2
 	- Method: PUT
 ```
 //request body
@@ -172,7 +172,7 @@ http://34.101.62.223:6000
 ```
 
 - DEL-reminder
-	- URL: http://34.101.62.223:5000/reminder/2
+	- URL: http://34.101.62.223:5000/reminders/2
 	- Method: DELETE
 ```
 {
