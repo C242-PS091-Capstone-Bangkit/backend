@@ -28,7 +28,7 @@ all of this is used to build servers and APIs
 ## Endpoint🌐
 - http://34.101.62.223:5000 for login, register, reminder, history feature
 - http://34.101.62.223:6000 for predict the model
-- 
+
 ### User-API
 - GET-User
 	- URL: http://34.101.62.223:5000/users
