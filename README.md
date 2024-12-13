@@ -1,7 +1,35 @@
-## Endpoint
-http://34.101.62.223:5000, 
-http://34.101.62.223:6000
-#### User-API
+# CLoud Computing Project - Creating APIs 🚀
+
+in this project cloud computing created an API to support the frontend in creating applications and implementing Machine Learning such as predicting skin type and condition, we used visual studio code to create the code and after completion we tested the API in postman, after all the APIs were running well , we deployed it to one of the Google Cloud Platform services, namely Compute Engine, and for our application database we used Cloud SQL
+
+## Requirements📋
+The project uses the following libraries and dependensi:
+- `hapi`
+- `jwt`
+- `bcrypt`
+- `dotenv`
+- `mysql2, mysql-connector`
+- `nademod`
+- `node js`
+- `python`
+- `flask`
+- `tensorflow`
+- `numpy`
+
+The tool used
+- `visual studio code`
+- `github`
+- `postman`
+- `Google CLoud Service`
+
+all of this is used to build servers and APIs
+
+
+## Endpoint🌐
+- http://34.101.62.223:5000 for login, register, reminder, history feature
+- http://34.101.62.223:6000 for predict the model
+- 
+### User-API
 - GET-User
 	- URL: http://34.101.62.223:5000/users
 	- Method: GET
@@ -127,7 +155,7 @@ http://34.101.62.223:6000
 }
 ```
 
-#### Reminder-API
+### Reminder-API
 - GET-reminder
 	- URL: http://34.101.62.223:5000/reminders
 	- Method: GET
@@ -193,7 +221,7 @@ http://34.101.62.223:6000
     "message": "reminder delete successfully"
 }
 ```
-#### History-API
+### History-API
 - GET-historyBy-id
 	- URL: http://34.101.62.223:5000/history/{id}
 	- Method: GET
@@ -220,6 +248,7 @@ http://34.101.62.223:6000
 }
 ```
 
+### Predict-API
 - predict gambar
   	- URL: http://34.101.62.223:6000/predict
   	- Method: POST
