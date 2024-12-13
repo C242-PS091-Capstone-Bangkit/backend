@@ -53,8 +53,8 @@ exports.updateReminder = async (request, h) => {
     const { id } = request.params;
     const { judul_reminder, deskripsi, jam_reminder } = request.payload;
 
-    if (!jam_reminder || !deskripsi || !jam_reminder) {
-      return h.response({ error: 'All fields are required: title, description, reminder_time' }).code(400);
+    if (!judul_reminder || !deskripsi || !jam_reminder) {
+      return h.response({ error: 'All fields are required: judul_reminder, deskripsi, jam_reminder' }).code(400);
     }
 
     const updatereminder = {
