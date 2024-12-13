@@ -8,11 +8,12 @@ const createUser = (user) => {
 
   return db.query(query, [email, username, password]);
 };
-const updateUser = (user, id) => db.query('UPDATE user SET email = ?, username = ?, password = ? WHERE id_user = ?', [user.email, user.username, user.password, id]);
+const updateUser = (user, id) => db.query('UPDATE user SET email = ?, username = ? WHERE id_user = ?', [user.email, user.username, id]);
+const updateUserPassword = (user, id) => db.query('UPDATE user SET password = ? WHERE id_user = ?', [user.password, id]);
 const deleteUser = (id) => db.query('DELETE FROM user WHERE id_user = ?', [id]);
 const getUsersByEmail = (email) => {
   const query = 'SELECT * FROM user WHERE email = ?';
   return db.query(query, [email]).then(([rows]) => rows[0]);
 };
 
-module.exports = { getAllUsers, getUsersById, createUser, updateUser, deleteUser, getUsersByEmail };
+module.exports = { getAllUsers, getUsersById, createUser, updateUser, updateUserPassword, deleteUser, getUsersByEmail };
