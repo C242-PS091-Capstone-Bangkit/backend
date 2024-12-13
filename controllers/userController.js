@@ -37,7 +37,7 @@ exports.createUser = async (request, h) => {
     const hashedPassword = await bcrypt.hash(password, 10);
     const userWithHashedPassword = { ...request.payload, password: hashedPassword };
 
-    // Simpan pengguna ke database
+    // Simpan user ke database
     const result = await userModel.createUser(userWithHashedPassword);
     return h.response({ id: result[0].insertId, ...userWithHashedPassword }).code(201);
   } catch (error) {
@@ -115,21 +115,15 @@ exports.verifyToken = async (request, h) => {
 exports.updateUser = async (request, h) => {
   try {
     const { id } = request.params;
-    const { email, username, password } = request.payload;
+    const { email, username } = request.payload;
 
-    if (!email || !username || !password) {
-      return h.response({ error: 'All fields are required: email, ,username, password' }).code(400);
-    }
-
-    let hashedPassword = undefined;
-    if (password) {
-      hashedPassword = await bcrypt.hash(password, 10);
+    if (!email || !username) {
+      return h.response({ error: 'All fields are required: email, ,username' }).code(400);
     }
 
     const updateuser = {
       email: email || undefined,
       username: username || undefined,
-      password: hashedPassword || undefined,
     };
 
     const result = await userModel.updateUser(updateuser, id);
@@ -138,6 +132,35 @@ exports.updateUser = async (request, h) => {
       return h.response({ message: 'user not found' }).code(404);
     }
     return h.response({ message: 'user update successfully' }).code(200);
+  } catch (error) {
+    return h.response({ error: error.message }).code(500);
+  }
+};
+
+//update password user
+exports.updatePasswordUser = async (request, h) => {
+  try {
+    const { id } = request.params;
+    const { password } = request.payload;
+
+    if (!password) {
+      return h.response({ error: 'password required' }).code(400);
+    }
+
+    let hashedPassword = undefined;
+    if (password) {
+      hashedPassword = await bcrypt.hash(password, 10);
+    }
+
+    const updatePasswordUser = {
+      password: hashedPassword || undefined,
+    };
+
+    const result = await userModel.updateUserPassword(updatePasswordUser, id);
+    if (result[0].affectedRows === 0) {
+      return h.response({ message: 'user not found' }).code(404);
+    }
+    return h.response({ message: 'password update successfully' }).code(200);
   } catch (error) {
     return h.response({ error: error.message }).code(500);
   }
