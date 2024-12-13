@@ -30,7 +30,7 @@ http://34.101.62.223:6000
 ```
 
 - GET-userBy-id
-	- URL: http://34.101.62.223:5000/users/1
+	- URL: http://34.101.62.223:5000/users/{id}
 	- Method: GET
 ```
 //response
@@ -64,14 +64,13 @@ http://34.101.62.223:6000
 ```
 
 - PUT-edit-user
-	- URL: http://34.101.62.223:5000/users/1
+	- URL: http://34.101.62.223:5000/users/{id}
 	- Method: PUT
 ```
 //response body
 {
   "username": "tester",
   "email": "tester@example.com",
-  "password": "tester123"
 }
 ```
 ```
@@ -80,9 +79,24 @@ http://34.101.62.223:6000
     "message": "user update successfully"
 }
 ```
+- PUT-edit-password
+	- URL: http://34.101.62.223:5000/users/{id}/password
+	- Method: PUT
+```
+//response body
+{
+  "password": "tester123"
+}
+```
+```
+//response
+{
+    "message": "password update successfully"
+}
+```
 
 - DEL-user
-	- URL: http://34.101.62.223:5000/users/5
+	- URL: http://34.101.62.223:5000/users/{id}
 	- Method: DELETE
 ```
 {
@@ -122,7 +136,7 @@ http://34.101.62.223:6000
 ```
 
 - GET-reminderBy-id
-	- URL: http://34.101.62.223:5000/reminders/1
+	- URL: http://34.101.62.223:5000/reminders/{id}
 	- Method: GET
 ```
 //response
@@ -154,7 +168,7 @@ http://34.101.62.223:6000
 ```
 
 - PUT-edit-reminder
-	- URL: http://34.101.62.223:5000/reminders/2
+	- URL: http://34.101.62.223:5000/reminders/{id}
 	- Method: PUT
 ```
 //request body
@@ -172,7 +186,7 @@ http://34.101.62.223:6000
 ```
 
 - DEL-reminder
-	- URL: http://34.101.62.223:5000/reminders/2
+	- URL: http://34.101.62.223:5000/reminders/{id}
 	- Method: DELETE
 ```
 {
@@ -181,7 +195,7 @@ http://34.101.62.223:6000
 ```
 #### History-API
 - GET-historyBy-id
-	- URL: http://34.101.62.223:5000/history/14
+	- URL: http://34.101.62.223:5000/history/{id}
 	- Method: GET
 ```
 //response
@@ -197,7 +211,7 @@ http://34.101.62.223:6000
 ```
 
 - DEL-history
-	- URL: http://34.101.62.223:5000/history/16
+	- URL: http://34.101.62.223:5000/history/{id}
 	- Method: DELETE
 ```
 //response
